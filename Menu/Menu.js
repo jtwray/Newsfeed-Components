@@ -1,12 +1,14 @@
-/* This is the data we will be using, study it but don't change anything, yet. */
 
-let menuItems = [
-	"Students",
-	"Faculty",
-	"What's New",
-	"Tech Trends",
-	"Music",
-	"Log Out",
+  /* This is the data we will be using, study it but don't change anything, yet. */
+  
+  let menuItems = [
+    "Students",
+    "Faculty",
+    "What's New",
+    "Tech Trends",
+    "Music",
+    "Log Out",
+
 ];
 /**menuDiv.setAttribute('class','className')===menuDiv.classList.add('classList') */
 
@@ -25,7 +27,6 @@ const createMenuComponent = (arr) => {
 	return console.log("menuDiv =>:", menuDiv);
 };
 createMenuComponent(menuItems);
-
 
 
 /* 
