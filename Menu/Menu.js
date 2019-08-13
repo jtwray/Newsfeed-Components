@@ -9,6 +9,7 @@ let menuItems = [
 	"Log Out",
 ];
 /**menuDiv.setAttribute('class','className')===menuDiv.classList.add('classList') */
+
 const createMenuComponent = (arr) => {
 	const menuDiv = document.createElement("DIV");
 	const menuList = document.createElement("UL");
