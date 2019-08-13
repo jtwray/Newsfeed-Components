@@ -11,17 +11,19 @@
 ];
 /**menuDiv.setAttribute('class','className')===menuDiv.classList.add('clasList') */
 const createMenuComponent=( [] ) => {
-
-    const menuDiv = document.createElement("DIV");
-    const menuList = document.createElement("UL");
+  const menuDiv = document.createElement("DIV");
+  const menuList = document.createElement("UL");
+  [].forEach( ( i ) => document.createElement( 'li' ).appendChild( i ) );
     menuDiv.setAttribute("class", "menu");
     menuDiv.appendChild(menuList);
-  console.log( menuDiv );
-  return menuDiv;
+    return menuDiv;
+    console.log( menuDiv );
 };
-createMenuComponent();
+createMenuComponent( menuItems );
+console.log(menuItems)
 
 
+/* 
 /* 
 /* 
 
