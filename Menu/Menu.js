@@ -1,14 +1,30 @@
-
 /* This is the data we will be using, study it but don't change anything, yet. */
 
 let menuItems = [
-  'Students',
-  'Faculty',
-  "What's New",
-  'Tech Trends',
-  'Music',
-  'Log Out'
+	"Students",
+	"Faculty",
+	"What's New",
+	"Tech Trends",
+	"Music",
+	"Log Out",
 ];
+/**menuDiv.setAttribute('class','className')===menuDiv.classList.add('classList') */
+
+const createMenuComponent = (arr) => {
+	const menuDiv = document.createElement("DIV");
+	const menuList = document.createElement("UL");
+  menuDiv.setAttribute("class", "menu");
+  menuDiv.appendChild(menuList);  
+  arr.forEach( ( i ) => {
+		let listItem = document.createElement("li");
+		listItem.textContent = i;
+		menuList.appendChild(listItem);
+		console.log("menuList:", menuList);
+	});
+	return console.log("menuDiv =>:", menuDiv);
+};
+createMenuComponent(menuItems);
+
 
 /* 
 
@@ -34,4 +50,4 @@ let menuItems = [
   Step 6: add the menu component to the DOM.
   
 */
->>>>>>> 97e62e7ec948dd22a3c96d36de14195563f39353
+
