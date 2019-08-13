@@ -8,24 +8,45 @@ let menuItems = [
 	"Music",
 	"Log Out",
 ];
-/**menuDiv.setAttribute('class','className')===menuDiv.classList.add('classList') */
-
-
+/**Creates a MenuComponent
+ * displaying menu options on hamburgerbutton click.
+ *  The options are formed as listItems in an unordered List.
+ *ListItems are created from 'arr' ,the argument provided to createMenuComponent(arr).*/
 const createMenuComponent = (arr) => {
-	const menuDiv = document.createElement("DIV");
+	/**menu.setAttribute('class','className')===menu.classList.add('classList') */
+	const menu = document.createElement("DIV");
+
+	menu.setAttribute("class", "menu");
+
 	const menuList = document.createElement("UL");
-  menuDiv.setAttribute("class", "menu");
-  menuDiv.appendChild(menuList);  
-  arr.forEach( ( i ) => {
+
+	menu.appendChild(menuList);
+
+	arr.forEach((i) => {
 		let listItem = document.createElement("li");
+
 		listItem.textContent = i;
+
 		menuList.appendChild(listItem);
+
 		console.log("menuList:", menuList);
 	});
-	return console.log("menuDiv =>:", menuDiv);
+
+	const toggleMenu = () => {
+		menu.classList.toggle("menu--open");
+
+		console.log(menu.classList);
+	};
+
+	const menuButton = document.querySelector(".menu-button");
+
+	menuButton.addEventListener("click", toggleMenu);
+
+	console.log("menu =>:", menu);
+
+	document.body.appendChild(menu);
 };
 createMenuComponent(menuItems);
-
 
 /* 
 /* 
