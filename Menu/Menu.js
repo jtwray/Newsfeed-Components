@@ -1,26 +1,29 @@
- 
-  /* This is the data we will be using, study it but don't change anything, yet. */
-  
-  let menuItems = [
-    "Students",
-    "Faculty",
-    "What's New",
-    "Tech Trends",
-    "Music",
-    "Log Out",
+/* This is the data we will be using, study it but don't change anything, yet. */
+
+let menuItems = [
+	"Students",
+	"Faculty",
+	"What's New",
+	"Tech Trends",
+	"Music",
+	"Log Out",
 ];
-/**menuDiv.setAttribute('class','className')===menuDiv.classList.add('clasList') */
-const createMenuComponent=( [] ) => {
-  const menuDiv = document.createElement("DIV");
-  const menuList = document.createElement("UL");
-  [].forEach( ( i ) => document.createElement( 'li' ).appendChild( i ) );
-    menuDiv.setAttribute("class", "menu");
-    menuDiv.appendChild(menuList);
-    return menuDiv;
-    console.log( menuDiv );
+/**menuDiv.setAttribute('class','className')===menuDiv.classList.add('classList') */
+const createMenuComponent = (arr) => {
+	const menuDiv = document.createElement("DIV");
+	const menuList = document.createElement("UL");
+  menuDiv.setAttribute("class", "menu");
+  menuDiv.appendChild(menuList);  
+  arr.forEach( ( i ) => {
+		let listItem = document.createElement("li");
+		listItem.textContent = i;
+		menuList.appendChild(listItem);
+		console.log("menuList:", menuList);
+	});
+	return console.log("menuDiv =>:", menuDiv);
 };
-createMenuComponent( menuItems );
-console.log(menuItems)
+createMenuComponent(menuItems);
+
 
 
 /* 
