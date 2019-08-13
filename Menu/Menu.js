@@ -1,4 +1,3 @@
- 
   /* This is the data we will be using, study it but don't change anything, yet. */
   
   let menuItems = [
@@ -20,7 +19,6 @@ const createMenuComponent=( [] ) => {
   return menuDiv;
 };
 createMenuComponent();
-
 
 /* 
 /* 
@@ -46,4 +44,5 @@ createMenuComponent();
 
   Step 6: add the menu component to the DOM.
   
+
 */
