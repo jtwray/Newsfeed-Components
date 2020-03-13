@@ -1,0 +1,24 @@
+{
+  "name": "newsfeed-components",
+  "version": "1.0.0",
+  "description": "A newsfeed for Using JavaScript Class Componets ",
+  "main": "index.less",
+  "dependencies": {
+    "less": "^3.11.1",
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtwray/Newsfeed-Components.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtwray/Newsfeed-Components/issues"
+  },
+  "homepage": "https://github.com/jtwray/Newsfeed-Components#readme"
+}
